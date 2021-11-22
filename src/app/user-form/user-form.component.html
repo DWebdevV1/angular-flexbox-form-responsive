@@ -1,0 +1,59 @@
+<div class="user-form-wrapper">
+
+  <form [formGroup]="userForm" (submit)="onFormSubmit()">
+
+    <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="1rem">
+
+      <div fxFlex="50" class="flex-part">
+        <div class="form-control" fxLayout="column">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" formControlName="firstName" placeholder="Enter First Name">
+        </div>
+
+        <div class="form-control" fxLayout="column">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" formControlName="lastName" placeholder="Enter Last Name">
+        </div>
+
+        <div class="form-control" fxLayout="column">
+          <label for="username">Username</label>
+          <input type="text" id="username" formControlName="username" placeholder="Enter Username">
+        </div>
+
+        <div class="form-control" fxLayout="column">
+          <label for="email">E-Mail-Address</label>
+          <input type="email" id="email" formControlName="email" placeholder="Enter E-Mail-Address">
+        </div>
+      </div>
+
+      <div fxFlex="50" class="flex-part">
+        <div class="form-control" fxLayout="column">
+          <label for="country">Country</label>
+          <input type="text" id="country" formControlName="country" placeholder="Enter Country">
+        </div>
+
+        <div class="form-control" fxLayout="column">
+          <label for="city">City</label>
+          <input type="text" id="city" formControlName="city" placeholder="Enter City">
+        </div>
+
+        <div class="form-control" fxLayout="column">
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" formControlName="zip" placeholder="Enter Zip Code">
+        </div>
+
+        <div class="form-control" fxLayout="column">
+          <label for="street">Street</label>
+          <input type="text" id="street" formControlName="street" placeholder="Enter Street">
+        </div>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1rem">
+      <button type="reset">Reset</button>
+      <button type="submit">Send</button>
+    </div>
+
+  </form>
+
+</div>

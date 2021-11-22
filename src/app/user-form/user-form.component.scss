@@ -1,0 +1,42 @@
+.user-form-wrapper {
+  background-color: rgba(0, 0, 0, .5);
+  border: 1px solid white;
+  padding: 1rem;
+  margin: auto;
+  width: 75vw;
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.5);
+
+  .flex-part {
+    margin-bottom: 0 !important;
+  }
+
+  .form-control {
+    color: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(150, 150, 150, .75);
+
+    label {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    input {
+      padding: .5rem;
+    }
+  }
+
+  button {
+    width: 10rem;
+    padding: 1rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background-color: rgba(255, 255, 255, .75);
+    color: black;
+  }
+}
